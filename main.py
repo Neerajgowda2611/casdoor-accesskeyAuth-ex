@@ -1,6 +1,6 @@
 import requests
 
-CASDOOR_URL = "https://authtest.cialabs.org/api/user"
+CASDOOR_URL = "https://yourHostedDomain/api/user"
 
 def authenticate_user(access_key, access_secret):
     
@@ -33,8 +33,8 @@ def process_data_request(access_key, access_secret, data):
         return {"error": "Authentication failed. Invalid access key or secret."}
 
 response = process_data_request(
-    access_key="e89f3ac0-a424-4785-83da-9cea2b5b903d",
-    access_secret="3cdfb230-d3fb-47e8-8581-7654655454a8",
+    access_key="your key",
+    access_secret="your secret ",
     data={"some": "data"}
 )
 
